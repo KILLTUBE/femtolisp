@@ -16,8 +16,7 @@
   We assume the LP64 convention for 64-bit platforms.
 */
 
-
-#if defined(__gnu_linux__)
+#if defined(__gnu_linux__) || defined(__CYGWIN__)
 #  define LINUX
 #elif defined(__APPLE__) && defined(__MACH__)
 #  define MACOSX
